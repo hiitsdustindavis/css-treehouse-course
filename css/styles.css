@@ -17,7 +17,7 @@ body {
 .nav {
   height: 70px;
   margin: 10px 15px 10px 15px;
-  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.3);
   padding: 0;
   margin: 0;
 }
@@ -44,11 +44,12 @@ body {
   border-radius: 4px;
   position: relative;
   margin: 20px 10px 0px 10px;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.3);
 }
 
 .colorHeader {
   width: 535px;
-  height: 50px;
+  height: 60px;
   color: white;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -68,18 +69,23 @@ body {
 
 ul {
   margin: 0;
-  padding: 15px 5px 15px 15px;
+  padding: 20px 5px 20px 15px;
 }
 
 li {
   float: left;
   list-style-type: none;
-  padding: 0px 10px 0px 0px;
+  padding: 0px 6px 0px 0px;
+}
+
+li:first-child {
+  padding: 0px 20px 0px 0px;
 }
 
 li:last-child {
   float: right;
-  padding: 0px 10px 0px 0px;
+  font-size: 13px;
+  padding: 0px 28px 0px 0px;
 }
 h4, h2, .arialRounded {
   font-family: "arialRounded";
@@ -103,7 +109,7 @@ h2 {
 }
 
 .content {
-  margin: 0px 20px 0px 20px;
+  margin: 0px 30px 0px 30px;
 }
 
 .toolTip {
@@ -126,14 +132,24 @@ button {
   font-family: 'arialRounded';
   font-size: 12px;
   padding: 8px 15px 8px 15px;
-  position: absolute;
+  /*position: absolute;
   bottom: 40px;
+  float: left;*/
+}
+
+.courseButton {
   float: left;
+  margin: 40px 0px 0px 0px;
+}
+
+.levelButton {
+  float: left;
+  margin: 40px 0px 0px 10px;
+
 }
 
 .levelButton {
   color: #4B5658;
-  left: 90px;
 }
 
 #javaButton {
@@ -149,16 +165,23 @@ button {
 }
 
 .movieButton{
-  position: absolute;
-  bottom: 40px;
-  right: 120px;
+  float: right;
+  margin: 40px 0px 0px 10px;
 }
 
 .starButton {
-  position: absolute;
-  bottom: 40px;
-  right: 80px;
+  float: right;
+  margin: 40px 0px 0px 10px;
 }
+
+.circle {
+  opacity: .4;
+  font-size: 20px;
+  position: relative;
+  bottom: 3px;
+}
+
+
 /*#talkbubble {
   transform: rotate(-90deg);
   margin: 0 auto;
